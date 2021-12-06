@@ -200,8 +200,8 @@ contract SushiMaker is BoringOwnable {
     // C1 - C24: OK
     function _toSUSHI(address token, uint256 amountIn) internal returns(uint256 amountOut) {
         // X1 - X5: OK
-        uint256 teamShare = amountIn.mul(10).div(100);
-        uint256 onsenAmount = amountIn.mul(10).div(100);
+        uint256 teamShare = amountIn.mul(15).div(100);
+        uint256 onsenAmount = amountIn.mul(5).div(100);
         uint256 burnAmount = amountIn.mul(10).div(100);
         uint256 barAmount = amountIn.mul(70).div(100);
         amountOutTeam = _swap(token, sushi, teamShare, treasury);
