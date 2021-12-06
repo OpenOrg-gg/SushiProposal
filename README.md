@@ -52,3 +52,5 @@ This would in turn lower xSushi rewards to 72% of their current value, but the e
 
 
 The SushiMaker.sol in this repo is a quick typed draft of the proposed contract and is not yet tested. It can likely be better implemented through directing the initial \_swap to a seperate splitter contract to manage the logic rather than adding the gas to an existing complex transaction.
+
+All contract changes appear in the constructor or between lines 203 - 210.
